@@ -32,7 +32,7 @@ namespace Linq
                 new Persona() { Id = 2, Name = "Alejandro", Age= 34},
                 new Persona() { Id = 3, Name = "Roma", Age=50}
             };
-            IEnumerable<object> listaAnonima = from persona in personas
+            /*IEnumerable<object> listaAnonima = from persona in personas
                                                where persona.Age > 30
                                                select new //este new esta creando un objeto nuevo distinto de Personas pero con sus datos, y es seleccionado en la query
                                                {
@@ -41,11 +41,30 @@ namespace Linq
                                                    mensaje = "Persona Anonima"
                                                };
 
-            listaAnonima.ToList().ForEach(persona => Console.WriteLine(persona.ToString()));
+            listaAnonima.ToList().ForEach(persona => Console.WriteLine(persona.ToString()));*/
 
 
+            //ordenar con linq
+            //personas.Sort((persona1,persona2) => persona1.Age-persona2.Age);
 
+            //personas.Sort((persona1, persona2) => //version larga
+            //{
+            //    if (persona1.Age<persona2.Age)
+            //    {
+            //        return -1;
+            //    }
+            //    else if(persona2.Age > persona1.Age)
+            //    {
+            //        return 1;
+            //    }
+            //    return 0;
+            //});
+            //personas.ForEach(persona => Console.WriteLine(persona.Age));
 
+            //retornar IEnumerable
+            IEnumerable<int> numerosPares2 = listaNumeros.Where(numero => (numero % 2 == 0));
+            
+            numerosPares2.ToList().ForEach(numero => Console.WriteLine(numero));
 
 
             //MiDelegado mensajeador = new MiDelegado(EscribirMensaje);
