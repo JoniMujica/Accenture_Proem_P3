@@ -15,5 +15,9 @@ namespace Linq
         {
             Console.WriteLine(mensaje);
         }
+        public static void EscribirMensaje2(int numero)
+        {
+            Console.WriteLine(numero);
+        }
     }
 }
