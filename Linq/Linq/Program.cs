@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Linq;
+using System.Collections.Generic;
 namespace Linq
 {
     public class Program
@@ -7,6 +8,46 @@ namespace Linq
        // delegate void MiDelegado(string mensaje);
         static void Main(string[] args)
         {
+
+            //como usar linq
+            List<int> listaNumeros = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            IEnumerable<int> numerosPares = from numero in listaNumeros where (numero % 2 == 0) select numero;
+            //var resultado = from numero in listaNumeros where (numero % 2 == 0) select numero;    esto es mala practica
+
+            //Forma vieja de recorrer
+            /*foreach (int item in numerosPares)
+            {
+                Console.WriteLine(item);
+            }*/
+
+            //Forma nueva Linq:
+            numerosPares.ToList().ForEach(numero => Console.WriteLine(numero)); //para este ForEach es importante convertilo a lista [ToList()]
+
+
+
+            //ListaDePersonas
+            List<Persona> personas = new List<Persona>()
+            {
+                new Persona() { Id = 1, Name = "Pepe", Age = 25},
+                new Persona() { Id = 2, Name = "Alejandro", Age= 34},
+                new Persona() { Id = 3, Name = "Roma", Age=50}
+            };
+            IEnumerable<object> listaAnonima = from persona in personas
+                                               where persona.Age > 30
+                                               select new //este new esta creando un objeto nuevo distinto de Personas pero con sus datos, y es seleccionado en la query
+                                               {
+                                                   id = persona.Id,
+                                                   name = persona.Name,
+                                                   mensaje = "Persona Anonima"
+                                               };
+
+            listaAnonima.ToList().ForEach(persona => Console.WriteLine(persona.ToString()));
+
+
+
+
+
+
             //MiDelegado mensajeador = new MiDelegado(EscribirMensaje);
             //mensajeador("Hello Word!");
             //Console.WriteLine("Hello World!");
@@ -22,5 +63,11 @@ namespace Linq
         {
             Console.WriteLine(numero);
         }*/
+    }
+    public class Persona
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
     }
 }
