@@ -1,0 +1,15 @@
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\Repository.Interfaces.deps.json
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\ref\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\Repository.Interfaces.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\Entidades.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\bin\Debug\net5.0\Entidades.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.csproj.AssemblyReference.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.AssemblyInfoInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.AssemblyInfo.cs
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.csproj.CoreCompileInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.csproj.CopyComplete
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\ref\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.Interfaces\obj\Debug\net5.0\Repository.Interfaces.pdb

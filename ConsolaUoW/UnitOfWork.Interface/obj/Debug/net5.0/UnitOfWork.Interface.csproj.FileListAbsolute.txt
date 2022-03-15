@@ -1,0 +1,17 @@
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\UnitOfWork.Interface.deps.json
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\UnitOfWork.Interface.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\ref\UnitOfWork.Interface.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\UnitOfWork.Interface.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\Entidades.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\Repository.Interfaces.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\bin\Debug\net5.0\Entidades.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.csproj.AssemblyReference.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.AssemblyInfoInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.AssemblyInfo.cs
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.csproj.CoreCompileInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.csproj.CopyComplete
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\ref\UnitOfWork.Interface.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\UnitOfWork.Interface\obj\Debug\net5.0\UnitOfWork.Interface.pdb

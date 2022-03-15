@@ -1,0 +1,17 @@
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Repository.SQLServer.deps.json
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Repository.SQLServer.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\ref\Repository.SQLServer.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Repository.SQLServer.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Entidades.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Repository.Interfaces.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Repository.Interfaces.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\bin\Debug\net5.0\Entidades.pdb
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.csproj.AssemblyReference.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.AssemblyInfoInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.AssemblyInfo.cs
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.csproj.CoreCompileInputs.cache
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.csproj.CopyComplete
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\ref\Repository.SQLServer.dll
+D:\Multimedia\Documentos\p2\ConsolaUoW\Repository.SQLServer\obj\Debug\net5.0\Repository.SQLServer.pdb

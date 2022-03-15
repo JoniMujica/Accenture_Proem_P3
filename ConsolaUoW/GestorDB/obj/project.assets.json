@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      },
+      "Repository.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.Interfaces.dll": {}
+        }
+      },
+      "UnitOfWork.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Repository.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UnitOfWork.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnitOfWork.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
+    },
+    "Repository.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Repository.Interfaces/Repository.Interfaces.csproj",
+      "msbuildProject": "../Repository.Interfaces/Repository.Interfaces.csproj"
+    },
+    "UnitOfWork.Interface/1.0.0": {
+      "type": "project",
+      "path": "../UnitOfWork.Interface/UnitOfWork.Interface.csproj",
+      "msbuildProject": "../UnitOfWork.Interface/UnitOfWork.Interface.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "UnitOfWork.Interface >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jonim\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Multimedia\\Documentos\\p2\\ConsolaUoW\\GestorDB\\GestorDB.csproj",
+      "projectName": "GestorDB",
+      "projectPath": "D:\\Multimedia\\Documentos\\p2\\ConsolaUoW\\GestorDB\\GestorDB.csproj",
+      "packagesPath": "C:\\Users\\jonim\\.nuget\\packages\\",
+      "outputPath": "D:\\Multimedia\\Documentos\\p2\\ConsolaUoW\\GestorDB\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jonim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Multimedia\\Documentos\\p2\\ConsolaUoW\\UnitOfWork.Interface\\UnitOfWork.Interface.csproj": {
+              "projectPath": "D:\\Multimedia\\Documentos\\p2\\ConsolaUoW\\UnitOfWork.Interface\\UnitOfWork.Interface.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
