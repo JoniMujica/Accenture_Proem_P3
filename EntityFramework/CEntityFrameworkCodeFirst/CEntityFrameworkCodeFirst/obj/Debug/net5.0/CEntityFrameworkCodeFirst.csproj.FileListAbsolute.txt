@@ -1,0 +1,16 @@
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.exe
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.deps.json
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.runtimeconfig.json
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.runtimeconfig.dev.json
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.dll
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\ref\CEntityFrameworkCodeFirst.dll
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\bin\Debug\net5.0\CEntityFrameworkCodeFirst.pdb
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.csproj.AssemblyReference.cache
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.GeneratedMSBuildEditorConfig.editorconfig
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.AssemblyInfoInputs.cache
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.AssemblyInfo.cs
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.csproj.CoreCompileInputs.cache
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.dll
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\ref\CEntityFrameworkCodeFirst.dll
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.pdb
+D:\Multimedia\Documentos\p2\EntityFramework\CEntityFrameworkCodeFirst\CEntityFrameworkCodeFirst\obj\Debug\net5.0\CEntityFrameworkCodeFirst.genruntimeconfig.cache
