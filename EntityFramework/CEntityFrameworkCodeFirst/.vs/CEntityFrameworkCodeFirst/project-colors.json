@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "da7886d5-85c9-44a6-aeef-16b67a5d2a0e": {
+      "ProjectGuid": "da7886d5-85c9-44a6-aeef-16b67a5d2a0e",
+      "DisplayName": "CEntityFrameworkCodeFirst",
+      "ColorIndex": 0
+    },
+    "6456398d-7a16-4823-b542-138a07792ab3": {
+      "ProjectGuid": "6456398d-7a16-4823-b542-138a07792ab3",
+      "DisplayName": "Entidades",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
