@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entidades.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace Entidades.Data
         {
 
         }
-        public DbSet<Persona> Persona { get; set; } //esto se setea en base a la class persona que es padre de Profesor y Alumno
+        public DbSet<Alumno> Alumnos { get; set; } //esto se setea en base a la class persona que es padre de Profesor y Alumno
+        public DbSet<Profesor> Profesores { get; set; } 
         public MyDBContext(DbContextOptions<MyDBContext> options):base(options)
         {
 
