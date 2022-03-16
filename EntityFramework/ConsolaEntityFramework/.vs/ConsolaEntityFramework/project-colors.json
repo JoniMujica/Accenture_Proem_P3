@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a18a7000-4da6-4dd1-aa2e-8dd5a6bd3f02": {
+      "ProjectGuid": "a18a7000-4da6-4dd1-aa2e-8dd5a6bd3f02",
+      "DisplayName": "ConsolaEntityFramework",
+      "ColorIndex": 0
+    },
+    "f527380c-67ba-44ea-8855-db0d48295d6f": {
+      "ProjectGuid": "f527380c-67ba-44ea-8855-db0d48295d6f",
+      "DisplayName": "Entidades",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

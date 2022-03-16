@@ -61,7 +61,7 @@ namespace ConsolaEntityFramework
             {
                 Direccione dr = db.Direcciones.First();
                 db.Direcciones.Remove(dr);
-                db.SaveChanges();
+                db.SaveChanges(); //aca aparece una excepcion xq tenemos relacionada la tabla personas con direcciones, no podemos borrar direcciones si hay un dato en la tabla personas referenciandolo [primero borrar el registro de la persona X]
 
                 Console.WriteLine("Termine de agregar");
             }
