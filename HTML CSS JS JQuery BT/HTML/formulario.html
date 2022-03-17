@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Mi Pagina - Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul type="square"> <!--type dice el tipo de enumeracion de la lista, y start, desde cuando va a comenzar-->
+                <li> <a href="./index.html" > Home</a></li>
+                <li> <a href="#" > Formulario</a></li>
+                <li> SubListas
+                    <ul type="square"> <!--type dice el tipo de enumeracion de la lista, y start, desde cuando va a comenzar-->
+                        <li><a href="./tabla.html" > Tabla</a></li>
+                        <li>Sub</li>
+                        <li>Sub</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form action="/api/productos" method="get">
+            <!--<label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required> -->
+            <fieldset>
+                <legend>Datos</legend>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="sexo">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="sexo">
+                <label for="nobin">No Binario</label>
+                <input type="radio" id="nobin" name="sexo">
+            </fieldset>
+
+            <select name="provincias" id="provincias">
+                <optgroup label="Provincias">
+                    <option value="Buenos Aires">BS:AS</option>
+                    <option value="Entre Rios">ENTRE RIOS</option>
+                    <option value="Santa Fe">SANTA FE</option>
+                </optgroup>
+                <optgroup label="Localidades">
+                    <option value="Lanus">Lanus</option>
+                    <option value="LDZ">Lomas de zamora</option>
+                    <option value="Avellaneda">Avellaneda</option>
+                </optgroup>
+            </select>
+            <input type="password" placeholder="Password">
+            <!--<input type="color" name="" id="">-->
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+
+
+            <fieldset>
+                <legend>Mensaje</legend>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje..." maxlength="250" minlength="20"></textarea>
+            </fieldset>
+
+            <input type="number" max="500" min="10" step="5" placeholder="esto es un nuemro">
+            <input type="date" name="" id="">
+            <input type="datetime" name="" id="">
+            <input type="file">
+
+
+
+            <fieldset>
+                <legend>Checkbox</legend>
+                <label for="peliculas">Peliculas</label>
+               <input type="checkbox" name="peliculas" id="peliculas">
+               <label for="musica">Musica</label>
+               <input type="checkbox" name="musica" id="musica">
+               <label for="leer">Leer</label>
+               <input type="checkbox" name="leer" id="leer">
+
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>

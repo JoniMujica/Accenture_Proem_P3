@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Mi Pagina - tabla</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul type="square"> <!--type dice el tipo de enumeracion de la lista, y start, desde cuando va a comenzar-->
+                <li> <a href="./index.html" > Home</a></li>
+                <li> <a href="./formulario.html" > Formulario</a></li>
+                <li> SubListas
+                    <ul type="square"> <!--type dice el tipo de enumeracion de la lista, y start, desde cuando va a comenzar-->
+                        <li><a href="#" > Tabla</a></li>
+                        <li>Sub</li>
+                        <li>Sub</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Tabla</h1>
+    </header>
+    <style>
+        table{
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: solid 1px black; 
+        }
+    </style>
+    <main>
+        <table s>
+            <thead>
+                <tr>
+                    <th colspan="2">Nombre Columna 1</th>
+                    <th>Nombre Columna 2</th>
+                    <th>Nombre Columna 3</th>
+                    <th>Nombre Columna 4</th>
+                    <th>Nombre Columna 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>res 1</td>
+                    <td>res 2</td>
+                    <td>res 3</td>
+                    <td>res 4</td>
+                    <td>res 5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
