@@ -32,7 +32,7 @@ namespace PrimerAPI.Controllers
 
                 return NoContent();
             }
-            
+
         }
 
         [HttpGet("{id:int}")] //esto ademas de ser un get de persona, al indicar esos atributos, va a estar esperando un ID
@@ -40,7 +40,7 @@ namespace PrimerAPI.Controllers
         {
             try
             {
-                return await context.Personas.Where(p=>p.Id == id).FirstAsync(); //ESTO RETORNA UNA UNICA PERSONA
+                return await context.Personas.Where(p => p.Id == id).FirstAsync(); //ESTO RETORNA UNA UNICA PERSONA
             }
             catch (System.Exception)
             {
@@ -49,6 +49,7 @@ namespace PrimerAPI.Controllers
             }
 
         }
+        //agregar
         [HttpPost("alta")] //esto ademas de ser un get de persona, al indicar esos atributos, va a estar esperando un ID
         public ActionResult<Persona> AltaPersona(Persona persona)
         {
@@ -63,6 +64,41 @@ namespace PrimerAPI.Controllers
                 return persona;
             }
         }
+        //modificar
+        [HttpPut("modificar/{id:int}")]
+        public ActionResult<Persona> ModificacionPersona(int id,Persona persona)
+        {
+            if (persona == null && id < 1)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                Persona p = context.Personas.Where((p) => p.Id == id).First();
+                p.Nombre = persona.Nombre;
+                p.Apellido = persona.Apellido;
+                p.Sexo = persona.Sexo;
+                context.Personas.Update(p).State = EntityState.Modified;
+                context.SaveChanges();
+                return persona;
+            }
+        }
+        //eliminar
+        [HttpDelete("{id:int}")]
+        public IActionResult EliminarPersona(int id)
+        {
+            if (id < 1)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                Persona p = context.Personas.Where((p) => p.Id == id).First();
+
+                context.Personas.Remove(p).State = EntityState.Deleted;
+                context.SaveChanges();
+                return Ok();
+            }
+        }
     }
-    
 }
