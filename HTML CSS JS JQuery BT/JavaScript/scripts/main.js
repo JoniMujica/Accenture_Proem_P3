@@ -128,7 +128,7 @@ btnEnviar.addEventListener("click",()=>{
         headers:{"Content-Type": "application/json; charset=utf-8"}
     }    
     )*/
-    fetch("https://localhost:44314/api/Persona", //para hacer post a una API, necesito la URL de la app y un parametro objeto la cual indicara metodo,body
+    fetch("https://localhost:44314/api/Persona/alta", //para hacer post a una API, necesito la URL de la app y un parametro objeto la cual indicara metodo,body
     {
         method:"POST",
         body:JSON.stringify(persona),
