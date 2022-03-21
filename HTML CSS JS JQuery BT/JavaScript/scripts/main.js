@@ -86,14 +86,24 @@ async function ejecutarlo(){
 
 //pegar a una API
 //GET
-fetch("https://uncovered-satisfying-kale.glitch.me/api/personas") //referimos a la API
+/*fetch("https://localhost:44314/api/Persona") //referimos a la API
 .then(res=>res.ok ? res.json() : Promise.reject({error: "Error"})) //con esto verifico que si la solicitud es OK, si es asi, recibo un JSON, sino devuelvo un error de la promesa
 //.then(data=> console.log(data));
 .then(data=> {
     if (data.status == "ok") {
         console.log("respuesta server OK");
         console.log(data.data);
+    }else{
+        console.log("respuesta server off");
     }
+});*/
+
+fetch("https://localhost:44314/api/Persona/1") //referimos a la API
+.then(res=>res.ok ? res.json() : Promise.reject({error: "Error"})) //con esto verifico que si la solicitud es OK, si es asi, recibo un JSON, sino devuelvo un error de la promesa
+//.then(data=> console.log(data));
+.then(data=> {
+ 
+    console.log(data);
 });
 
 
@@ -111,7 +121,14 @@ btnEnviar.addEventListener("click",()=>{
     console.log(persona);
     
     //POST
-    fetch("https://uncovered-satisfying-kale.glitch.me/api/personas", //para hacer post a una API, necesito la URL de la app y un parametro objeto la cual indicara metodo,body
+    /*fetch("https://uncovered-satisfying-kale.glitch.me/api/personas", //para hacer post a una API, necesito la URL de la app y un parametro objeto la cual indicara metodo,body
+    {
+        method:"POST",
+        body:JSON.stringify(persona),
+        headers:{"Content-Type": "application/json; charset=utf-8"}
+    }    
+    )*/
+    fetch("https://localhost:44314/api/Persona", //para hacer post a una API, necesito la URL de la app y un parametro objeto la cual indicara metodo,body
     {
         method:"POST",
         body:JSON.stringify(persona),

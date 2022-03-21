@@ -28,6 +28,7 @@ namespace PrimerAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => options.AddDefaultPolicy(builder=> builder.AllowAnyOrigin())); //con esto habilitamos CORS para poder utilizar la api de forma local en el frontend
             services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MiConexion"))); //esto llamo a la StringConection del appsettings.json
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -47,7 +48,7 @@ namespace PrimerAPI
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(); //con esto habilitamos CORS en la aplicacion
             app.UseRouting();
 
             app.UseAuthorization();
