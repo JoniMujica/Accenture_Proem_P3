@@ -49,6 +49,20 @@ namespace PrimerAPI.Controllers
             }
 
         }
+        [HttpPost("alta")] //esto ademas de ser un get de persona, al indicar esos atributos, va a estar esperando un ID
+        public ActionResult<Persona> AltaPersona(Persona persona)
+        {
+            if (persona == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                context.Personas.Add(persona).State = EntityState.Added;
+                context.SaveChanges();
+                return persona;
+            }
+        }
     }
     
 }
