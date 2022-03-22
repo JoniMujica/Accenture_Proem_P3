@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6b1c26c0-2f86-4e61-9899-4bc90cca4767": {
+      "ProjectGuid": "6b1c26c0-2f86-4e61-9899-4bc90cca4767",
+      "DisplayName": "MVC_StarWars",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

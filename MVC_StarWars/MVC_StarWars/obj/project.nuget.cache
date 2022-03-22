@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "T6egvp5e5VDZ0MIZNUO9HFkPcv5hDYy4Q/+htovrVb8W4bToG+T8TWIKRXv4M4eajnYYIsaSaap/ZT0JOgviuQ==",
+  "success": true,
+  "projectFilePath": "D:\\Multimedia\\Documentos\\p2\\MVC_StarWars\\MVC_StarWars\\MVC_StarWars.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-preview.2.22153.1\\microsoft.entityframeworkcore.7.0.0-preview.2.22153.1.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0-preview.2.22153.1\\microsoft.entityframeworkcore.abstractions.7.0.0-preview.2.22153.1.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.0-preview.2.22153.1\\microsoft.entityframeworkcore.analyzers.7.0.0-preview.2.22153.1.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.0-preview.2.22153.1\\microsoft.entityframeworkcore.inmemory.7.0.0-preview.2.22153.1.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0-preview.2.22152.2\\microsoft.extensions.caching.abstractions.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0-preview.2.22152.2\\microsoft.extensions.caching.memory.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-preview.2.22152.2\\microsoft.extensions.dependencyinjection.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.2.22152.2\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0-preview.2.22152.2\\microsoft.extensions.logging.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0-preview.2.22152.2\\microsoft.extensions.logging.abstractions.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.options\\7.0.0-preview.2.22152.2\\microsoft.extensions.options.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0-preview.2.22152.2\\microsoft.extensions.primitives.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.collections.immutable\\7.0.0-preview.2.22152.2\\system.collections.immutable.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.0-preview.2.22152.2\\system.diagnostics.diagnosticsource.7.0.0-preview.2.22152.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\7.0.0-preview.2.22152.2\\system.runtime.compilerservices.unsafe.7.0.0-preview.2.22152.2.nupkg.sha512"
+  ],
+  "logs": []
+}
