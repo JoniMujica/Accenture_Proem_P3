@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<StarwarsDb>(options => options.UseInMemoryDatabase("starwars")); //Aca le digo que en mi proyecto, se va  autilizar este contexto de DB
+builder.Services.AddDbContext<StarwarsDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SWContext"))); //Aca le digo que en mi proyecto, se va  autilizar este contexto de DB
 
 var app = builder.Build();
 
