@@ -18,6 +18,7 @@
             <tr>
                 <td>@personaje.Id</td>
                 <td>@personaje.Nombre</td>
+                <td><a class="nav-link text-dark" asp-area="" asp-controller="Personajes" asp-action="Editar" asp-route-id="@personaje.Id">Editar</a></td> <!--con asp-route-id="personaje.Id" le estamos pasando como parametro el Id del objeto item-->
             </tr>
         }
     </tbody>
