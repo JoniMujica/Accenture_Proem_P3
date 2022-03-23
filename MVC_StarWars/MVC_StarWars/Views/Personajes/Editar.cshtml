@@ -5,3 +5,6 @@
      <input asp-for="Nombre" class="form-control" /><br />
      <input type="submit" value="Guardar" class="btn btn-primary" />
 </form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

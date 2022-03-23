@@ -51,7 +51,8 @@ namespace MVC_StarWars.Controllers
                 context.Entry(modelo).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             }
             context.SaveChanges();
-            return View(modelo);
+            //return View(modelo);
+            return RedirectToAction("Listado");
         }
         public IActionResult Editar(string id)
         {
