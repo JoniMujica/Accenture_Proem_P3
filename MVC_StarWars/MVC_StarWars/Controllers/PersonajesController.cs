@@ -71,7 +71,7 @@ namespace MVC_StarWars.Controllers
             List<KeyValuePair<int,string>> tipos = new();
             tipos.Add(new KeyValuePair<int, string>(1, "jedy"));
             tipos.Add(new KeyValuePair<int, string>(2, "Sith"));
-            SelectList items = new(tipos, "Key", "Value");
+            SelectList items = new(tipos, "Key", "Value"); //esto hace que se agregue select en items ViewbAG
             ViewBag.Tipos = items;
             return View(model);
         }
