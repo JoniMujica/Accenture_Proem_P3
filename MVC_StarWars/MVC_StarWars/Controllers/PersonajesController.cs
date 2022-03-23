@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_StarWars.Models;
 using System;
@@ -67,6 +68,11 @@ namespace MVC_StarWars.Controllers
             {
                 model = context.Personajes.Find(Id);
             }
+            List<KeyValuePair<int,string>> tipos = new();
+            tipos.Add(new KeyValuePair<int, string>(1, "jedy"));
+            tipos.Add(new KeyValuePair<int, string>(2, "Sith"));
+            SelectList items = new(tipos, "Key", "Value");
+            ViewBag.Tipos = items;
             return View(model);
         }
         public IActionResult Index(string id,string nombre) //al agregarle parametros, hacemos referencia al get del input, y se pasar como parametros de URL
