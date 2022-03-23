@@ -1,7 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using MVC_StarWars.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<StarwarsDb>(options => options.UseInMemoryDatabase("starwars")); //Aca le digo que en mi proyecto, se va  autilizar este contexto de DB
 
 var app = builder.Build();
 
