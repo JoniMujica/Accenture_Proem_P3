@@ -1,8 +1,11 @@
-﻿namespace MVC_StarWars.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MVC_StarWars.Models
 {
     public class Personaje
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "El nombre es obligatorio")]
         public string Nombre { get; set; }
     }
 }
