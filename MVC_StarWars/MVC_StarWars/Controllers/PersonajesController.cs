@@ -41,16 +41,31 @@ namespace MVC_StarWars.Controllers
         public IActionResult Editar(Personaje modelo)
         {
             //var model = context.Personajes.Find(modelo.Id);
-            context.Attach(modelo);
-            context.Entry(modelo).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            if (modelo.Id == 0)
+            {
+                context.Personajes.Add(modelo);
+            }
+            else
+            {
+                context.Attach(modelo);
+                context.Entry(modelo).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
             context.SaveChanges();
             return View(modelo);
         }
         public IActionResult Editar(string id)
         {
+            Personaje model;
             int Id = 0;
             int.TryParse(id, out Id);
-            var model = context.Personajes.Find(Id);
+            if (Id == 0)
+            {
+                model = new();
+            }
+            else
+            {
+                model = context.Personajes.Find(Id);
+            }
             return View(model);
         }
         public IActionResult Index(string id,string nombre) //al agregarle parametros, hacemos referencia al get del input, y se pasar como parametros de URL
