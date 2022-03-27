@@ -13,11 +13,23 @@ namespace MVC_StarWars.Controllers
         {
             this.context = context;
         }
-
-        public IActionResult Listado()
+        
+        /*public IActionResult Listado()
         {
             var model = new PersonajesListadoModel();
             model.Listado = context.Personajes.ToList();
+            return View(model); //ESTO SE LO PASAMOS COMO PARAMETRO A  LA VISTA
+        }*/
+        public IActionResult Listado(string valor)
+        {
+            var model = new PersonajesListadoModel();
+            var query = context.Personajes.AsQueryable();
+            if (!string.IsNullOrEmpty(valor))
+            {
+                query = query.Where(x => x.Nombre.Contains(valor)); //aca buscamos en la lista el nombre
+            }
+            //model.Listado = context.Personajes.ToList();
+            model.Listado = query.ToList();
             return View(model); //ESTO SE LO PASAMOS COMO PARAMETRO A  LA VISTA
         }
         public IActionResult Eliminar(string id)
