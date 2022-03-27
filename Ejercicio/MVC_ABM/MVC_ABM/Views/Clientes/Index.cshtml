@@ -1,0 +1,90 @@
+﻿@model GestorClientes
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Clientes</h1>
+
+<form asp-action="Crear" method="post">
+    <input type="text" asp-for="clientes.Nombre" placeholder="Nombre" class="form-control" />
+    <input type="text" asp-for="clientes.Direccion" placeholder="Direccion" class="form-control" />
+    <input type="number" asp-for="clientes.Telefono" placeholder="Numero Telefono" class="form-control" />
+    <input type="text" asp-for="clientes.CUIT" placeholder="CUIT" class="form-control" />
+    <div class="form-group">
+        <input type="submit" value="Guardar" class="btn btn-primary" />
+    </div>
+</form>
+@{
+    if (Model.Listado.ListadoClientes.Count != 0)
+    {
+        <table>
+            <thead>
+                <tr>
+                   <th>ID</th>
+                   <th>Nombre</th>
+                   <th>Direccion</th>
+                   <th>Telefono</th>
+                   <th>CUIT</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var clientes in Model.Listado.ListadoClientes)
+                {
+                    <tr>
+                        <td>@clientes.Id</td>
+                        <td>@clientes.Nombre</td>
+                        <td>@clientes.Direccion</td>
+                        <td>@clientes.Telefono</td>
+                        <td>@clientes.CUIT</td>
+                        <td><a class="openForm" >Editar</a></td>
+                        <td><a asp-controller="Clientes" asp-action="Eliminar" asp-route-id="@clientes.Id">Eliminar</a></td>
+                        <dialog class="dialogo" class="dialogo">
+                            <form asp-action="Editar" method="post">
+                                <div class="form-group" hidden>
+                                    <label asp-for="@clientes.Id" class="control-label" hidden></label>
+                                    <input type="number" asp-for="@clientes.Id" class="form-control" hidden /><br />
+                                    <span asp-validation-for="@clientes.Id" class="text-danger" hidden></span><br />
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@clientes.Nombre" class="control-label"></label>
+                                    <input asp-for="@clientes.Nombre" class="form-control" /><br />
+                                    <span asp-validation-for="@clientes.Nombre" class="text-danger"></span><br />
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@clientes.Direccion" class="control-label"></label>
+                                    <input asp-for="@clientes.Direccion" class="form-control" /><br />
+                                    <span asp-validation-for="@clientes.Direccion" class="text-danger"></span><br />
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@clientes.Telefono" class="control-label"></label>
+                                    <input asp-for="@clientes.Telefono" class="form-control" /><br />
+                                    <span asp-validation-for="@clientes.Telefono" class="text-danger"></span><br />
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@clientes.CUIT" class="control-label"></label>
+                                    <input asp-for="@clientes.CUIT" class="form-control" /><br />
+                                    <span asp-validation-for="@clientes.CUIT" class="text-danger"></span><br />
+                                </div>
+                                <div class="form-group">
+                                    <input  type="submit" value="Guardar" class="btnCerrar btn btn-primary" />
+                                </div>
+                                <div class="form-group">
+                                    <button  type="button" class="btnCerrar btn btn-primary" >Cancelar</button>
+                                </div>
+                            </form>    
+                          </dialog>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h3> no hay datos para mostrar</h3>
+    }
+}
+<script type="text/javascript" src="@Url.Content("/site.js")"></script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
