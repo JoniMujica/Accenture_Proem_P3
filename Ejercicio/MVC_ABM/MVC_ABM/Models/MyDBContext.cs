@@ -5,6 +5,7 @@ namespace MVC_ABM.Models
     public class MyDBContext : DbContext
     {
         public DbSet<Clientes> Clientes { get; set;}
+        public DbSet<Factura> Facturas { get; set;}
         public MyDBContext()
         {
 

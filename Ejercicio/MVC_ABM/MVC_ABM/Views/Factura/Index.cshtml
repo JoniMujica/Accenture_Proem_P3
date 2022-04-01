@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model GestorClientes
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index" method="get">
+            <div class="form-group">
+                <label asp-for="clientes.Id" class="control-label"></label>
+                <select asp-for="clientes.Id" class="form-control" asp-items="@ViewBag.Tipos"> <!--ACA AGO REFERENCIA DEL LA LISTA DE VIEWBAG-->
+                    <option value="">Seleccionar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

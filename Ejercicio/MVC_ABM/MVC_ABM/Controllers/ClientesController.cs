@@ -54,6 +54,7 @@ namespace MVC_ABM.Controllers
             GestorClientes cli = new GestorClientes();
             cli.Listado.ListadoClientes = context.Clientes.ToList();
             //lista.ListadoClientes = context.Clientes.ToList();
+
             return View(cli);
         }
     }
