@@ -14,6 +14,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+//con esto creo los Claims
+builder.Services.AddAuthorization(options =>
+    options.AddPolicy("SoloClientes", p => p.RequireClaim("Usuario", "Cliente","Administrador")));
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
