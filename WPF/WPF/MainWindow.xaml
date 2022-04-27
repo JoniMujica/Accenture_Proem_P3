@@ -1,0 +1,52 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <!--<StackPanel>
+            <Button x:Name="MiBoton" Click="Button_Click">Click</Button>
+        </StackPanel>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0">Rfsdfsdfsdfdsfsdfow 0 Col 1</Label>
+        <Label Grid.Row="1" Background="blue">Row 1 Col 1</Label>
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Background="Red">Row 2 Col 1</Label>
+        <Label Grid.Row="3" Background="Yellow">Row 3 Col 1</Label>
+        <Label Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Background="Black">Row 4 Col 1</Label>
+
+
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="3" Orientation="Horizontal">
+            <Button>Boton1</Button>
+            <Button>Boton2</Button>
+            <Button>Boton3</Button>
+        </StackPanel>
+        <DockPanel Grid.Row="4" Grid.Column="1">
+            <Button DockPanel.Dock="Right">Boton1</Button>
+            <Button DockPanel.Dock="Left">Boton2</Button>
+            <Button>Boton3</Button>
+        </DockPanel>
+        <!--<StackPanel></StackPanel>
+        <DockPanel></DockPanel>
+        <WrapPanel></WrapPanel>
+        <Canvas></Canvas>
+        <Viewbox></Viewbox>-->
+    </Grid>
+    
+    
+</Window>

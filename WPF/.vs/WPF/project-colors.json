@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bb4127a9-6c37-4b44-a06b-03edc9bc6b80": {
+      "ProjectGuid": "bb4127a9-6c37-4b44-a06b-03edc9bc6b80",
+      "DisplayName": "WPF",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
