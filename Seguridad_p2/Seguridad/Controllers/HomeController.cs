@@ -6,20 +6,20 @@ using System.Security.Claims;
 
 namespace Seguridad.Controllers
 {
-    [Authorize] //esto hace que requiera que este autorizado para acceder al Home
+    //[Authorize] //esto hace que requiera que este autorizado para acceder al Home
 
-    [Authorize(Policy = "SoloClientes")] //este Claim, se agrega en Program.cs
+    //[Authorize(Policy = "SoloClientes")] //este Claim, se agrega en Program.cs
     //[Authorize(Policy = "Remotos")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _configuration;
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
         }
 
-        [AllowAnonymous] //esto me permite ingresar a este metodo/vista sin autorizacion
         public IActionResult Index()
         {
             /*var claim = new Claim("Admin", "false"); //agrega "roles" a los usuarios
@@ -41,7 +41,23 @@ namespace Seguridad.Controllers
         {
             var valor2 = TempData["valor2"];
             var valor1 = ViewBag.Valor1;
+            TempData.Keep("valor2");
             return View();
+        }
+        public IActionResult Empresa()
+        {
+            var options = new EmpresaOptions();
+            _configuration.GetSection(EmpresaOptions.Seccion).Bind(options);
+            return Content($"Empresa {options.RazonSocial} y CUIT {options.Cuit}"); //aca hago referencia de las cfgs  del appsetting con objeto desde _configuration 
+        }
+        public IActionResult Test4()
+        {
+            return RedirectToAction("Index");
+        }
+        public IActionResult Test1()
+        {
+            return File("/Files/pyton.pdf", "application/pdf");
+            //return File("/Files/pyton.pdf", "application/pdf", "Manual.pdf");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -51,3 +67,10 @@ namespace Seguridad.Controllers
         }
     }
 }
+/*
+ TIPOS DE ACTION RESULT
+  return Ok();
+  return BadRequest();
+  return NoContent();
+  return Unauthorized();
+ */
