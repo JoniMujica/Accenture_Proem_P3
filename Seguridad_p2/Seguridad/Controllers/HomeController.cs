@@ -30,12 +30,21 @@ namespace Seguridad.Controllers
             {
                 return View();
             }*/
-            _logger.LogError("test");
-            _logger.LogDebug("prueba");
-            ViewBag.Valor1 = "valor1";
-            TempData["valor2"] = "valor2";
+            try
+            {
+                _logger.LogError("test");
+                _logger.LogDebug("prueba");
+                ViewBag.Valor1 = "valor1";
+                TempData["valor2"] = "valor2";
 
-            return View();
+                return View();
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError("Error en el index de la home",ex);
+                throw;
+            }
+            
             
         }
 
