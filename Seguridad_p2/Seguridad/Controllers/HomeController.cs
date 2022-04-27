@@ -59,6 +59,20 @@ namespace Seguridad.Controllers
             return File("/Files/pyton.pdf", "application/pdf");
             //return File("/Files/pyton.pdf", "application/pdf", "Manual.pdf");
         }
+        [HttpGet]
+        public IActionResult Test3()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Test3(IList<IFormFile> files)
+        {
+            foreach (var file in files)
+            {
+
+            }
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
