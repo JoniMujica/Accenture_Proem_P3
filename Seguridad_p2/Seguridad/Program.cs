@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Seguridad.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
