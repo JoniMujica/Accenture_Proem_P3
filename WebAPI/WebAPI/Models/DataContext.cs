@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.Models.Configuration;
 
 namespace WebAPI.Models
 {
@@ -9,6 +10,7 @@ namespace WebAPI.Models
         {
 
         }
+        /*
         //esto es para cambiar el nombre de la tabla de la db
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,7 +19,15 @@ namespace WebAPI.Models
             modelBuilder.Entity<Articulo>().Property(p => p.Nombre).HasMaxLength(60);
             modelBuilder.Entity<Articulo>().HasIndex(p => p.Nombre);
         }
+        */
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //con esto resumo y aplico al config de la instancia de ArticuloConfiguration
+            //sirve para aplicar en el contexto de la app
+            modelBuilder.ApplyConfiguration(new ArticuloConfiguration());
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
