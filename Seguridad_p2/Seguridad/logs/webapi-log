@@ -46,4 +46,48 @@
  ][2022-04-27 00:10:33:057 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/ - - - 200 - text/html;+charset=utf-8 22.6696ms 
  ][2022-04-27 00:10:33:109 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - 
  ][2022-04-27 00:10:33:111 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11943 application/javascript;+charset=utf-8 1.9735ms 
+ ][2022-04-27 00:23:05:929 -03:00  INF  User profile is available. Using 'C:\Users\jonim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ][2022-04-27 00:23:06:216 -03:00  INF  Now listening on: https://localhost:7099 
+ ][2022-04-27 00:23:06:216 -03:00  INF  Now listening on: http://localhost:5099 
+ ][2022-04-27 00:23:06:220 -03:00  INF  Application started. Press Ctrl+C to shut down. 
+ ][2022-04-27 00:23:06:220 -03:00  INF  Hosting environment: Development 
+ ][2022-04-27 00:23:06:221 -03:00  INF  Content root path: D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\ 
+ ][2022-04-27 00:23:07:472 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/ - - 
+ ][2022-04-27 00:23:07:557 -03:00  INF  Identity.Application was not authenticated. Failure message: Unprotect ticket failed 
+ ][2022-04-27 00:23:07:561 -03:00  INF  Executing endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:23:07:589 -03:00  INF  Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Seguridad.Controllers.HomeController (Seguridad). 
+ ][2022-04-27 00:23:07:597 -03:00  ERR  test 
+ ][2022-04-27 00:23:07:636 -03:00  INF  Executing ViewResult, running view Index. 
+ ][2022-04-27 00:23:07:928 -03:00  INF  Executed ViewResult - view Index executed in 293.1253ms. 
+ ][2022-04-27 00:23:07:933 -03:00  INF  Executed action Seguridad.Controllers.HomeController.Index (Seguridad) in 343.5953ms 
+ ][2022-04-27 00:23:07:934 -03:00  INF  Executed endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:23:07:955 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/ - - - 200 - text/html;+charset=utf-8 488.1937ms 
+ ][2022-04-27 00:23:08:020 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - 
+ ][2022-04-27 00:23:08:023 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11943 application/javascript;+charset=utf-8 2.7979ms 
+ ][2022-04-27 00:24:16:368 -03:00  INF  User profile is available. Using 'C:\Users\jonim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ][2022-04-27 00:24:16:628 -03:00  INF  Now listening on: https://localhost:7099 
+ ][2022-04-27 00:24:16:628 -03:00  INF  Now listening on: http://localhost:5099 
+ ][2022-04-27 00:24:16:630 -03:00  INF  Application started. Press Ctrl+C to shut down. 
+ ][2022-04-27 00:24:16:631 -03:00  INF  Hosting environment: Development 
+ ][2022-04-27 00:24:16:631 -03:00  INF  Content root path: D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\ 
+ ][2022-04-27 00:24:17:674 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/ - - 
+ ][2022-04-27 00:24:17:805 -03:00  INF  Identity.Application was not authenticated. Failure message: Unprotect ticket failed 
+ ][2022-04-27 00:24:17:811 -03:00  INF  Executing endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:24:17:854 -03:00  INF  Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Seguridad.Controllers.HomeController (Seguridad). 
+ ][2022-04-27 00:24:17:977 -03:00  ERR  Error en el index de la home 
+ ][2022-04-27 00:24:17:980 -03:00  INF  Executing RedirectResult, redirecting to /Home/Error. 
+ ][2022-04-27 00:24:17:986 -03:00  INF  Executed action Seguridad.Controllers.HomeController.Index (Seguridad) in 126.7939ms 
+ ][2022-04-27 00:24:17:988 -03:00  INF  Executed endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:24:18:003 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/ - - - 301 0 - 333.9022ms 
+ ][2022-04-27 00:24:18:018 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/Home/Error - - 
+ ][2022-04-27 00:24:18:022 -03:00  INF  Identity.Application was not authenticated. Failure message: Unprotect ticket failed 
+ ][2022-04-27 00:24:18:022 -03:00  INF  Executing endpoint 'Seguridad.Controllers.HomeController.Error (Seguridad)' 
+ ][2022-04-27 00:24:18:023 -03:00  INF  Route matched with {action = "Error", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller Seguridad.Controllers.HomeController (Seguridad). 
+ ][2022-04-27 00:24:18:033 -03:00  INF  Executing ViewResult, running view Error. 
+ ][2022-04-27 00:24:18:291 -03:00  INF  Executed ViewResult - view Error executed in 264.7597ms. 
+ ][2022-04-27 00:24:18:293 -03:00  INF  Executed action Seguridad.Controllers.HomeController.Error (Seguridad) in 269.765ms 
+ ][2022-04-27 00:24:18:293 -03:00  INF  Executed endpoint 'Seguridad.Controllers.HomeController.Error (Seguridad)' 
+ ][2022-04-27 00:24:18:303 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/Home/Error - - - 200 - text/html;+charset=utf-8 285.2570ms 
+ ][2022-04-27 00:24:18:357 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - 
+ ][2022-04-27 00:24:18:360 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11943 application/javascript;+charset=utf-8 3.5357ms 
  ]
