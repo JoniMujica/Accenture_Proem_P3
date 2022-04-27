@@ -138,3 +138,13 @@ D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\obj\Debug\net
 D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\obj\Debug\net6.0\ref\Seguridad.dll
 D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\obj\Debug\net6.0\Seguridad.pdb
 D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\obj\Debug\net6.0\Seguridad.genruntimeconfig.cache
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\bin\Debug\net6.0\Serilog.Sinks.File.dll

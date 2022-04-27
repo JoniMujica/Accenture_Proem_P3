@@ -31,6 +31,7 @@ namespace Seguridad.Controllers
                 return View();
             }*/
             _logger.LogError("test");
+            _logger.LogDebug("prueba");
             ViewBag.Valor1 = "valor1";
             TempData["valor2"] = "valor2";
 

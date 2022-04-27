@@ -1,0 +1,19 @@
+[2022-04-27 00:08:52:229 -03:00  INF  User profile is available. Using 'C:\Users\jonim\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ][2022-04-27 00:08:52:708 -03:00  INF  Now listening on: https://localhost:7099 
+ ][2022-04-27 00:08:52:709 -03:00  INF  Now listening on: http://localhost:5099 
+ ][2022-04-27 00:08:52:712 -03:00  INF  Application started. Press Ctrl+C to shut down. 
+ ][2022-04-27 00:08:52:713 -03:00  INF  Hosting environment: Development 
+ ][2022-04-27 00:08:52:713 -03:00  INF  Content root path: D:\Multimedia\Documentos\Accenture_Proem_P3\Seguridad_p2\Seguridad\ 
+ ][2022-04-27 00:08:53:564 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/ - - 
+ ][2022-04-27 00:08:53:676 -03:00  INF  Identity.Application was not authenticated. Failure message: Unprotect ticket failed 
+ ][2022-04-27 00:08:53:680 -03:00  INF  Executing endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:08:53:766 -03:00  INF  Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Seguridad.Controllers.HomeController (Seguridad). 
+ ][2022-04-27 00:08:53:784 -03:00  ERR  test 
+ ][2022-04-27 00:08:53:836 -03:00  INF  Executing ViewResult, running view Index. 
+ ][2022-04-27 00:08:54:208 -03:00  INF  Executed ViewResult - view Index executed in 373.2784ms. 
+ ][2022-04-27 00:08:54:215 -03:00  INF  Executed action Seguridad.Controllers.HomeController.Index (Seguridad) in 448.1619ms 
+ ][2022-04-27 00:08:54:215 -03:00  INF  Executed endpoint 'Seguridad.Controllers.HomeController.Index (Seguridad)' 
+ ][2022-04-27 00:08:54:252 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/ - - - 200 - text/html;+charset=utf-8 692.8199ms 
+ ][2022-04-27 00:08:54:283 -03:00  INF  Request starting HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - 
+ ][2022-04-27 00:08:54:287 -03:00  INF  Request finished HTTP/2 GET https://localhost:7099/_framework/aspnetcore-browser-refresh.js - - - 200 11943 application/javascript;+charset=utf-8 4.0470ms 
+ ]
