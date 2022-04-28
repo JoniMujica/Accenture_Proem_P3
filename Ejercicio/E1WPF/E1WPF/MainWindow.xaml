@@ -11,16 +11,20 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Nombre" Margin="20"/>
-        <TextBox Grid.Row="0" x:Name="NombreTXT" Margin="50" />
+        <Label  Grid.Row="0" Content="Id" Margin="20"/>
+        <TextBox Text="{Binding Id}" Grid.Row="0" Name="IdTXT" Height="20" />
+        <Label  Grid.Row="1" Content="Nombre" Margin="20"/>
+        <TextBox Text="{Binding Nombre}" Grid.Row="1" Name="NombreTXT" Height="20" />
 
-        <Label Grid.Row="1" Content="Precio" Margin="20"/>
-        <TextBox Grid.Row="1" x:Name="TXTPrecio" Margin="50" />
+        <Label Grid.Row="2" Content="Precio" Margin="20"/>
+        <TextBox Text="{Binding Precio}" Grid.Row="2" Name="TXTPrecio" Height="20" />
 
-        <Button Grid.Row="2" Content="OK" Click="Button_Click" Margin="5"/>
+        <!--<Button Grid.Row="3" Content="OK" Click="Button_Click_1" Margin="5"/>-->
+        <Button Grid.Row="3" Content="OK" Command="{Binding Guardar}" Margin="5"/>
     </Grid>
 </Window>

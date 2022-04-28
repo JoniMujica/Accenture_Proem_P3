@@ -19,18 +19,28 @@ namespace E1WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
+        readonly MainViewModel model = new MainViewModel();
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = model;
+            
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Articulo art = new();
-            art.Nombre = NombreTXT.Text;
-            art.Precio = decimal.Parse(TXTPrecio.Text);
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            /*Articulo ar = new();
+            model.Id = 0;
+            model.Nombre = "";
+            model.Precio = 0;*/
         }
     }
 }
