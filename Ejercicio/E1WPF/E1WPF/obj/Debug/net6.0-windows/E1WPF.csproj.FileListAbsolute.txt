@@ -19,3 +19,5 @@ D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\obj\Debug\net6
 D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\obj\Debug\net6.0-windows\ref\E1WPF.dll
 D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\obj\Debug\net6.0-windows\E1WPF.pdb
 D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\obj\Debug\net6.0-windows\E1WPF.genruntimeconfig.cache
+D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\Ejercicio\E1WPF\E1WPF\obj\Debug\net6.0-windows\E1WPF.csproj.CopyComplete

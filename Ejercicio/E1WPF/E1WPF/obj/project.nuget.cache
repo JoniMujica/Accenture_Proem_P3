@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "b0yWsmRQnCUICeQg6Qj38P0MZoR2NVzQjtZ1TUMx9rdx4DUdyz9yX0JQiI0WK36xIMfSB0+bsGIu4lS5m9+lrg==",
+  "dgSpecHash": "Fty0BeKWAKEGTO2wCTvrH89/DE8GApSzGp3oPyuFnMrlcrFW4FaiQNRLR6Sjrg6rmeNFTtxow0iJ9lDEomRnww==",
   "success": true,
   "projectFilePath": "D:\\Multimedia\\Documentos\\Accenture_Proem_P3\\Ejercicio\\E1WPF\\E1WPF\\E1WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jonim\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\refit.newtonsoft.json\\6.3.2\\refit.newtonsoft.json.6.3.2.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

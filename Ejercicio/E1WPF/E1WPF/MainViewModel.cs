@@ -1,9 +1,11 @@
-﻿using System;
+﻿using E1WPF.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -32,8 +34,11 @@ namespace E1WPF
         {
             Guardar = new DelegateCommand((x)=>OnGuardar());
         }
-        private void OnGuardar()
+        private async void OnGuardar()
         {
+            HttpClient client = new();
+            var response = await client.GetStringAsync("https://localhost:7051/api/Articulos");
+            var result = JsonConvert.DeserializeObject<List<Articulo>>(response);
             Id = 0;
             Nombre = "";
             Precio = 0;
