@@ -81,6 +81,7 @@ namespace WebAPI.Controllers
             row.CreateCell(0).SetCellValue("Codigo");
             row.CreateCell(1).SetCellValue("Nombre");
             row.CreateCell(2).SetCellValue("Precio");
+            row.CreateCell(3).SetCellValue("Precio mayorista");
             int rowNumber = 1;
             foreach (var item in articulos)
             {
@@ -88,6 +89,7 @@ namespace WebAPI.Controllers
                 row.CreateCell(0).SetCellValue(item.Id);
                 row.CreateCell(1).SetCellValue(item.Nombre);
                 row.CreateCell(2).SetCellValue((double)item.Precio);
+                row.CreateCell(3).SetCellFormula($"C{rowNumber+1}*0.9");
                 rowNumber++;
             }
             var st = new MemoryStream();
@@ -95,7 +97,7 @@ namespace WebAPI.Controllers
             var st2 = new MemoryStream();
             var array = st.ToArray();
             st2.Write(array,0,array.Length);
-            //await st.FlushAsync();
+            //await st.FlushAsync(); 
             st2.Position = 0;
             //st.Close();
             return File(st2, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","Reporte.xlsx");
