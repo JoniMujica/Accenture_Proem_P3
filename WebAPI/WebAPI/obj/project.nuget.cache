@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BQrSc1A/14Z7Fs4P70m1y+QH0kwFMRIRlPJgYFqtjwrarD55V1XeVJ2N3sneCc0vrmlCwgq+ISkB7p2AujeioA==",
+  "dgSpecHash": "/zxCpM9zCXq1AOhoBTk4mYRZtL9KFQ3cf6vQgXbfDAn1/tMcHTFG1CJT2+bpe1mCYZXkqY1mOYjNTAxB3iM1mQ==",
   "success": true,
   "projectFilePath": "D:\\Multimedia\\Documentos\\Accenture_Proem_P3\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jonim\\.nuget\\packages\\dotnetcore.npoi\\1.2.3\\dotnetcore.npoi.1.2.3.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\dotnetcore.npoi.core\\1.2.3\\dotnetcore.npoi.core.1.2.3.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\dotnetcore.npoi.openxml4net\\1.2.3\\dotnetcore.npoi.openxml4net.1.2.3.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\dotnetcore.npoi.openxmlformats\\1.2.3\\dotnetcore.npoi.openxmlformats.1.2.3.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -35,6 +39,7 @@
     "C:\\Users\\jonim\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\jonim\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\jonim\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
