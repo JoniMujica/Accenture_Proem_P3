@@ -77,11 +77,38 @@ namespace WebAPI.Controllers
             var articulos = await dataContext.Articulos.ToListAsync();
             IWorkbook worlbook = new XSSFWorkbook();
             ISheet sheet1 = worlbook.CreateSheet("Articulos");
+
+
+            //tipo de fuente
+            var titulos = worlbook.CreateCellStyle();
+            var fuente = worlbook.CreateFont();
+            //le agrego negrita y tamaño  ala fuente
+            fuente.IsBold=true;
+            fuente.FontHeight = 30;
+            titulos.SetFont(fuente);
+
             IRow row = sheet1.CreateRow(0);
-            row.CreateCell(0).SetCellValue("Codigo");
+            var celda = row.CreateCell(0);
+            /*row.CreateCell(0).SetCellValue("Codigo");
             row.CreateCell(1).SetCellValue("Nombre");
             row.CreateCell(2).SetCellValue("Precio");
-            row.CreateCell(3).SetCellValue("Precio mayorista");
+            row.CreateCell(3).SetCellValue("Precio mayorista");*/
+            celda.SetCellValue("Codigo");
+            celda.CellStyle = titulos;
+            celda = row.CreateCell(1);
+            celda.SetCellValue("Nombre");
+            celda.CellStyle = titulos;
+            celda = row.CreateCell(2);
+            celda.SetCellValue("Precio");
+            celda.CellStyle = titulos;
+            celda = row.CreateCell(3);
+            celda.SetCellValue("Precio Mayorista");
+            celda.CellStyle = titulos;
+            sheet1.AutoSizeColumn(0);
+            sheet1.AutoSizeColumn(1);
+            sheet1.AutoSizeColumn(2);
+            sheet1.AutoSizeColumn(3);
+
             int rowNumber = 1;
             foreach (var item in articulos)
             {
