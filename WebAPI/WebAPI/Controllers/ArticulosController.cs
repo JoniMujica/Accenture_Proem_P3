@@ -80,7 +80,11 @@ namespace WebAPI.Controllers
             PdfWriter writer = new PdfWriter(st);
             PdfDocument pdf = new PdfDocument(writer);
             Document reporte = new Document(pdf, iText.Kernel.Geom.PageSize.A4);
-            Paragraph texto = new Paragraph("Prueba PDF");
+            Paragraph texto = new Paragraph("Listado de articulos")
+                .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                .SetFontSize(15)
+                .SetMarginBottom(3);
+                
             reporte.Add(texto);
             reporte.Close();
 
