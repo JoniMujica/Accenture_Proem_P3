@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NPOI.SS.UserModel;
@@ -68,7 +71,25 @@ namespace WebAPI.Controllers
             await dataContext.SaveChangesAsync();
             return NoContent();
         }
+        [HttpGet]
+        [Route("ExportPDF")]
+        public async Task<IActionResult> ExportPDF()
+        {
+            var articulos = await dataContext.Articulos.ToListAsync();
+            var st = new  MemoryStream();
+            PdfWriter writer = new PdfWriter(st);
+            PdfDocument pdf = new PdfDocument(writer);
+            Document reporte = new Document(pdf, iText.Kernel.Geom.PageSize.A4);
+            Paragraph texto = new Paragraph("Prueba PDF");
+            reporte.Add(texto);
+            reporte.Close();
 
+            var st2 = new MemoryStream();
+            var array = st.ToArray();
+            st2.Write(array, 0, array.Length);
+            st2.Position = 0;
+            return File(st2, "application/pdf","Reporte.pdf");
+        }
 
         [HttpGet]
         [Route("Export")]
