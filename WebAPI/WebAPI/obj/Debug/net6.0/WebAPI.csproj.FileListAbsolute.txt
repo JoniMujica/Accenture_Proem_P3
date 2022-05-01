@@ -65,3 +65,17 @@ D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\NPOI.
 D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\NPOI.OpenXml4Net.dll
 D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\NPOI.OpenXmlFormats.dll
 D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.barcodes.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.forms.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.io.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.kernel.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.layout.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.pdfa.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.sign.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.styledxmlparser.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.svg.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\itext.commons.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Multimedia\Documentos\Accenture_Proem_P3\WebAPI\WebAPI\bin\Debug\net6.0\BouncyCastle.Crypto.dll
