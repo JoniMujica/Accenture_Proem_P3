@@ -87,6 +87,8 @@ namespace WebAPI.Controllers
                 
             reporte.Add(texto);
             reporte.Close();
+            Table tabla = new Table(3, false); //con esto indico que la tabla tiene 3 columnas
+            Cell cell = new Cell();
 
             var st2 = new MemoryStream();
             var array = st.ToArray();
