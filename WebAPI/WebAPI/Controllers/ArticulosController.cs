@@ -1,5 +1,6 @@
 ﻿using iText.Kernel.Colors;
 using iText.Kernel.Pdf;
+using iText.Kernel.Pdf.Canvas.Draw;
 using iText.Layout;
 using iText.Layout.Element;
 using Microsoft.AspNetCore.Http;
@@ -132,7 +133,8 @@ namespace WebAPI.Controllers
                 tabla.AddCell(cell);
                 rowNumber++;
             }
-
+            var ls = new LineSeparator(new SolidLine());
+            reporte.Add(ls);
             reporte.Add(tabla);
             reporte.Close();
 
