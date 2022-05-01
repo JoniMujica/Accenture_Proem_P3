@@ -2,7 +2,7 @@
 
 namespace EjemploTP.Models
 {
-    public class AppContext : DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<Trago> Tragos { get; set; }
         public DbSet<Ingrediente> Ingredientes { get; set;}
