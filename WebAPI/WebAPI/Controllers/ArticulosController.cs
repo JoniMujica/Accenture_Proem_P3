@@ -1,4 +1,5 @@
-﻿using iText.Kernel.Pdf;
+﻿using iText.Kernel.Colors;
+using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
 using Microsoft.AspNetCore.Http;
@@ -84,11 +85,56 @@ namespace WebAPI.Controllers
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                 .SetFontSize(15)
                 .SetMarginBottom(3);
-                
             reporte.Add(texto);
-            reporte.Close();
+            
             Table tabla = new Table(3, false); //con esto indico que la tabla tiene 3 columnas
-            Cell cell = new Cell();
+            Cell cell = new Cell()
+                .SetBackgroundColor(ColorConstants.GRAY)
+                .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                .SetFontColor(ColorConstants.WHITE)
+                .SetFontSize(12)
+                .Add(new Paragraph("Codigo"));
+            tabla.AddCell(cell);
+
+            cell = new Cell()
+                .SetBackgroundColor(ColorConstants.GRAY)
+                .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                .SetFontColor(ColorConstants.WHITE)
+                .SetFontSize(12)
+                .Add(new Paragraph("Nombre"));
+            tabla.AddCell(cell);
+            cell = new Cell()
+                .SetBackgroundColor(ColorConstants.GRAY)
+                .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                .SetFontColor(ColorConstants.WHITE)
+                .SetFontSize(12)
+                .Add(new Paragraph("Precio"));
+            tabla.AddCell(cell);
+            //reporte.Add(tabla);
+
+            int rowNumber = 1;
+            foreach (var item in articulos)
+            {
+                cell = new Cell()
+                    //.SetBackgroundColor(ColorConstants.GRAY)
+                    .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                    .Add(new Paragraph($"{ item.Id }"));
+                tabla.AddCell(cell);
+                cell = new Cell()
+                    //.SetBackgroundColor(ColorConstants.GRAY)
+                    .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                    .Add(new Paragraph($"{item.Nombre}"));
+                tabla.AddCell(cell);
+                cell = new Cell()
+                    //.SetBackgroundColor(ColorConstants.GRAY)
+                    .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                    .Add(new Paragraph($"{item.Precio}"));
+                tabla.AddCell(cell);
+                rowNumber++;
+            }
+
+            reporte.Add(tabla);
+            reporte.Close();
 
             var st2 = new MemoryStream();
             var array = st.ToArray();
