@@ -1,0 +1,47 @@
+﻿@model EditarViewModel
+
+<form method="post">
+<label asp-for="Tragos.Id"></label>
+<input asp-for="Tragos.Id" readonly /> <br />
+<label asp-for="Tragos.Nombre"></label>
+<input asp-for="Tragos.Nombre" /> <br />
+<table>
+    <tr>
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Cantidad</td>
+        <td>Precio</td>
+    </tr>
+    <tr>
+        <td><input asp-for="Item1.Codigo"/><input asp-for="Item1.Id" type="hidden"/></td> 
+        <td><input asp-for="Item1.Descripcion"/></td>
+        <td><input asp-for="Item1.Cantidad"/></td>
+        <td><input asp-for="Item1.Precio"/></td>
+    </tr>
+    <tr>
+        <td><input asp-for="Item2.Codigo"/><input asp-for="Item2.Id" type="hidden"/></td>
+        <td><input asp-for="Item2.Descripcion"/></td>
+        <td><input asp-for="Item2.Cantidad"/></td>
+        <td><input asp-for="Item2.Precio"/></td>
+    </tr>
+    <tr>
+        <td><input asp-for="Item3.Codigo"/><input asp-for="Item3.Id" type="hidden"/></td>
+        <td><input asp-for="Item3.Descripcion"/></td>
+        <td><input asp-for="Item3.Cantidad"/></td>
+        <td><input asp-for="Item3.Precio"/></td>
+    </tr>
+    <tr>
+        <td><input asp-for="Item4.Codigo"/><input asp-for="Item4.Id" type="hidden"/></td>
+        <td><input asp-for="Item4.Descripcion"/></td>
+        <td><input asp-for="Item4.Cantidad"/></td>
+        <td><input asp-for="Item4.Precio"/></td>
+    </tr>
+    <tr>
+        <td><input asp-for="Item5.Codigo"/><input asp-for="Item5.Id" type="hidden"/></td></td>
+        <td><input asp-for="Item5.Descripcion"/></td>
+        <td><input asp-for="Item5.Cantidad"/></td>
+        <td><input asp-for="Item5.Precio"/></td>
+    </tr>
+</table>
+<input type="submit" value="Guardar" />
+</form>
