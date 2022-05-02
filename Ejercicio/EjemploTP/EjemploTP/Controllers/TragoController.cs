@@ -14,7 +14,7 @@ namespace EjemploTP.Controllers
         {
             return View(context.Tragos.ToList());
         }
-        public IActionResult Editar(int id)
+        /*public IActionResult Editar(int id)
         {
             EditarViewModel model = new EditarViewModel();
             model.Tragos = context.Tragos.Find(id);
@@ -119,6 +119,53 @@ namespace EjemploTP.Controllers
                     context.Entry(valores.Item5).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 }
             }
+            context.SaveChanges();
+            return Redirect("Index");
+        }*/
+        [HttpPost]
+        public IActionResult Agregar(EditarViewModel2 valores)
+        {
+            if (valores.Ingredientes == null)
+            {
+                valores.Ingredientes = new List<Ingrediente>();
+            }
+            valores.Ingredientes.Add(valores.Item);
+            valores.Item = new Ingrediente();
+            return View("Editar2",valores);
+        }
+        public IActionResult Editar2(int id)
+        {
+            EditarViewModel2 model = new EditarViewModel2();
+            model.Tragos = context.Tragos.Find(id); 
+            model.Ingredientes = context.Ingredientes.Where(x => x.TragoId == id).ToList();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Editar2(EditarViewModel2 valores)
+        {
+            if (valores.Tragos.Id == 0)
+            {
+                context.Add(valores.Tragos);
+            }
+            else
+            {
+                context.Tragos.Attach(valores.Tragos);
+                context.Entry(valores.Tragos).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
+            foreach (var item in valores.Ingredientes)
+            {
+                item.Trago = valores.Tragos;
+                if (item.Id == 0)
+                {
+                    context.Ingredientes.Add(item);
+                }
+                else
+                {
+                    context.Ingredientes.Attach(item);
+                    context.Entry(item).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                }
+            }
+            
             context.SaveChanges();
             return Redirect("Index");
         }

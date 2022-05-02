@@ -1,0 +1,34 @@
+﻿@model EditarViewModel2
+
+<form method="post">
+<label asp-for="Tragos.Id"></label>
+<input asp-for="Tragos.Id" readonly /> <br />
+<label asp-for="Tragos.Nombre"></label>
+<input asp-for="Tragos.Nombre" /> <br />
+<table>
+    <tr>
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Cantidad</td>
+        <td>Precio</td>
+    </tr>
+    @for(var i = 0; i<Model.Ingredientes.Count;i++)
+    { 
+         <tr>
+             <td><input asp-for="@Model.Ingredientes[i].Codigo"><input type="hidden" asp-for="@Model.Ingredientes[i].Id" /></td>
+             <td><input asp-for="@Model.Ingredientes[i].Descripcion"></td>
+             <td><input asp-for="@Model.Ingredientes[i].Cantidad"></td>
+             <td><input asp-for="@Model.Ingredientes[i].Precio"></td>
+         </tr>
+    }
+   
+    <tr>
+        <td><input asp-for="Item.Codigo"/><input asp-for="Item.Id" type="hidden"/></td></td>
+        <td><input asp-for="Item.Descripcion"/></td>
+        <td><input asp-for="Item.Cantidad"/></td>
+        <td><input asp-for="Item.Precio"/></td>
+    </tr>
+</table>
+<input type="submit" value="Agregar" asp-action="Agregar"/>
+<input type="submit" value="Guardar" asp-action="Editar2"/>
+</form>
