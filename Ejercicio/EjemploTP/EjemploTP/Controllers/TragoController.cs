@@ -1,5 +1,6 @@
 ﻿using EjemploTP.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EjemploTP.Controllers
 {
@@ -168,6 +169,35 @@ namespace EjemploTP.Controllers
             
             context.SaveChanges();
             return Redirect("Index");
+        }
+
+
+        //reporte Clientes
+        public IActionResult SendData()
+        {
+            //context.Clientes.Add(new Cliente { Nombre = "Cliente2" });
+            //context.Clientes.Add(new Cliente { Nombre = "Cliente3" });
+            //context.Clientes.Add(new Cliente { Nombre = "Cliente1" });
+           
+
+            for (int i = 0; i < 1000; i++)
+            {
+                Random rand = new Random();
+                //context.Factura.Add(new Factura { ClienteId = rand.Next(1, 3), Total=rand.Next(1,5000) });
+                context.Factura.Add(new Factura { ClienteId = 3, Total = rand.Next(1, 5000) });
+            }
+            context.SaveChanges();
+            return View("Index");
+        }
+        public IActionResult Reporte()
+        {
+            var response = context.Factura
+                .Include(f=>f.Cliente)
+                .GroupBy(f=>f.Cliente.Nombre)
+                .Select(f=> new ReporteViewModel { Cliente=f.Key,Total=f.Sum(i=>i.Total)})
+                .OrderByDescending(f=>f.Total)
+                .ToList();
+            return Ok(response);
         }
     }
 }

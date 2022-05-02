@@ -6,7 +6,8 @@ namespace EjemploTP.Models
     {
         public DbSet<Trago> Tragos { get; set; }
         public DbSet<Ingrediente> Ingredientes { get; set;}
-
+        public DbSet<Cliente> Clientes { get; set;}
+        public DbSet<Factura> Factura { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
